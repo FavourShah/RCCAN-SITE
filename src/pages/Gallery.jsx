@@ -192,7 +192,7 @@ const Gallery = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex items-center justify-center pt-16">
         <div className="text-center">
           <RefreshCw className="w-8 h-8 animate-spin text-blue-600 mx-auto mb-4" />
           <p className="text-gray-600">Loading gallery...</p>
@@ -203,8 +203,8 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* New Dynamic Hero Section */}
-      <section id="gallery-hero" className="relative py-20 overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      {/* New Dynamic Hero Section with top padding for navbar */}
+      <section id="gallery-hero" className="relative pt-24 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         {/* Animated Background Pattern */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5"></div>
