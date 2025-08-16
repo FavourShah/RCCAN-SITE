@@ -17,13 +17,11 @@ const Navbar = () => {
           {/* Top row: Logo and hamburger menu */}
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center justify-center flex-1">
-              <div className="w-12 h-12 flex items-center justify-center">
-                <img
-                  src="/images/logo.png"
-                  alt="Church Logo"
-                  className="w-12 h-12 object-contain"
-                />
-              </div>
+              <img
+                src="/images/logo.png"
+                alt="Church Logo"
+                className="h-16 w-auto max-w-[180px] object-contain"
+              />
             </div>
             <button
               className="p-2"
