@@ -18,7 +18,7 @@ const Navbar = () => {
               <img
                 src="/images/logo.png"
                 alt="Church Logo"
-                className="w-16 h-16 p-1 object-contain"
+                className="w-24 h-20 p-1 object-contain"
               />
             </div>
             <div className="flex-1 text-center md:text-left">
