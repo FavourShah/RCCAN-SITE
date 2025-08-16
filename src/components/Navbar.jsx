@@ -21,7 +21,7 @@ const Navbar = () => {
                 className="w-16 h-16 p-1 object-contain"
               />
             </div>
-            <div className="flex-1 text-center md:text-left">
+            <div className="flex-1 text-center md:text-left py-2">
               <span className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-slate-800">
                 Resurrection Church of Christ of All Nations
               </span>
