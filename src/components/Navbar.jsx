@@ -15,8 +15,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-auto md:h-16 py-2 md:py-0">
           {/* Logo and Title Container */}
           <div className="flex items-center space-x-3">
-            {/* Mobile Layout - Stack vertically */}
-            <div className="flex md:hidden flex-col items-start space-y-1">
+            {/* Mobile Layout - Stack vertically centered */}
+            <div className="flex md:hidden flex-col items-center space-y-1">
               <div className="w-16 h-12 flex items-center justify-center">
                 <img
                   src="/images/logo.png"
@@ -24,7 +24,7 @@ const Navbar = () => {
                   className="w-16 h-12 object-contain"
                 />
               </div>
-              <span className="text-sm font-bold text-slate-800 leading-tight">
+              <span className="text-sm font-bold text-slate-800 leading-tight text-center">
                 Resurrection Church of Christ of All Nations
               </span>
             </div>
