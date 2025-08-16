@@ -1,0 +1,444 @@
+{
+  "generated": "2025-08-16T14:01:12.158Z",
+  "count": 73,
+  "images": [
+    {
+      "id": "img-0",
+      "filename": "1.jpg",
+      "src": "/images/1.jpg",
+      "thumb": "/images/1.jpg"
+    },
+    {
+      "id": "img-1",
+      "filename": "2.jpg",
+      "src": "/images/2.jpg",
+      "thumb": "/images/2.jpg"
+    },
+    {
+      "id": "img-2",
+      "filename": "3.jpg",
+      "src": "/images/3.jpg",
+      "thumb": "/images/3.jpg"
+    },
+    {
+      "id": "img-3",
+      "filename": "about-us.jpg",
+      "src": "/images/about-us.jpg",
+      "thumb": "/images/about-us.jpg"
+    },
+    {
+      "id": "img-4",
+      "filename": "about1.jpg",
+      "src": "/images/about1.jpg",
+      "thumb": "/images/about1.jpg"
+    },
+    {
+      "id": "img-5",
+      "filename": "about2.jpg",
+      "src": "/images/about2.jpg",
+      "thumb": "/images/about2.jpg"
+    },
+    {
+      "id": "img-6",
+      "filename": "church-logo.jpg",
+      "src": "/images/church-logo.jpg",
+      "thumb": "/images/church-logo.jpg"
+    },
+    {
+      "id": "img-7",
+      "filename": "contact.jpg",
+      "src": "/images/contact.jpg",
+      "thumb": "/images/contact.jpg"
+    },
+    {
+      "id": "img-8",
+      "filename": "contact1.jpg",
+      "src": "/images/contact1.jpg",
+      "thumb": "/images/contact1.jpg"
+    },
+    {
+      "id": "img-9",
+      "filename": "contact2 (2).jpg",
+      "src": "/images/contact2 (2).jpg",
+      "thumb": "/images/contact2 (2).jpg"
+    },
+    {
+      "id": "img-10",
+      "filename": "contact2.jpg",
+      "src": "/images/contact2.jpg",
+      "thumb": "/images/contact2.jpg"
+    },
+    {
+      "id": "img-11",
+      "filename": "disciple.jpg",
+      "src": "/images/disciple.jpg",
+      "thumb": "/images/disciple.jpg"
+    },
+    {
+      "id": "img-12",
+      "filename": "evangelist.jpg",
+      "src": "/images/evangelist.jpg",
+      "thumb": "/images/evangelist.jpg"
+    },
+    {
+      "id": "img-13",
+      "filename": "head usher.jpg",
+      "src": "/images/head usher.jpg",
+      "thumb": "/images/head usher.jpg"
+    },
+    {
+      "id": "img-14",
+      "filename": "home 2.jpg",
+      "src": "/images/home 2.jpg",
+      "thumb": "/images/home 2.jpg"
+    },
+    {
+      "id": "img-15",
+      "filename": "home1.jpg",
+      "src": "/images/home1.jpg",
+      "thumb": "/images/home1.jpg"
+    },
+    {
+      "id": "img-16",
+      "filename": "homepic.jpg",
+      "src": "/images/homepic.jpg",
+      "thumb": "/images/homepic.jpg"
+    },
+    {
+      "id": "img-17",
+      "filename": "lead pastor.jpg",
+      "src": "/images/lead pastor.jpg",
+      "thumb": "/images/lead pastor.jpg"
+    },
+    {
+      "id": "img-18",
+      "filename": "logo.png",
+      "src": "/images/logo.png",
+      "thumb": "/images/logo.png"
+    },
+    {
+      "id": "img-19",
+      "filename": "pastor-mrs.jpg",
+      "src": "/images/pastor-mrs.jpg",
+      "thumb": "/images/pastor-mrs.jpg"
+    },
+    {
+      "id": "img-20",
+      "filename": "service1.jpg",
+      "src": "/images/service1.jpg",
+      "thumb": "/images/service1.jpg"
+    },
+    {
+      "id": "img-21",
+      "filename": "service2.jpg",
+      "src": "/images/service2.jpg",
+      "thumb": "/images/service2.jpg"
+    },
+    {
+      "id": "img-22",
+      "filename": "services.jpg",
+      "src": "/images/services.jpg",
+      "thumb": "/images/services.jpg"
+    },
+    {
+      "id": "img-23",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.05_b08d6474.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.05_b08d6474.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.05_b08d6474.jpg"
+    },
+    {
+      "id": "img-24",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.05_bb133146.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.05_bb133146.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.05_bb133146.jpg"
+    },
+    {
+      "id": "img-25",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.05_d99f0a61.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.05_d99f0a61.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.05_d99f0a61.jpg"
+    },
+    {
+      "id": "img-26",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.06_c5679ff7.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.06_c5679ff7.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.06_c5679ff7.jpg"
+    },
+    {
+      "id": "img-27",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.06_e03609f2.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.06_e03609f2.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.06_e03609f2.jpg"
+    },
+    {
+      "id": "img-28",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.07_13f38014.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.07_13f38014.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.07_13f38014.jpg"
+    },
+    {
+      "id": "img-29",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.07_da441e2a.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.07_da441e2a.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.07_da441e2a.jpg"
+    },
+    {
+      "id": "img-30",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.08_992a4ca1.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.08_992a4ca1.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.08_992a4ca1.jpg"
+    },
+    {
+      "id": "img-31",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.09_16234c4f.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.09_16234c4f.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.09_16234c4f.jpg"
+    },
+    {
+      "id": "img-32",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.09_7e4c6a7c.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.09_7e4c6a7c.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.09_7e4c6a7c.jpg"
+    },
+    {
+      "id": "img-33",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.09_ef9055f0.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.09_ef9055f0.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.09_ef9055f0.jpg"
+    },
+    {
+      "id": "img-34",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.09_f464cccd.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.09_f464cccd.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.09_f464cccd.jpg"
+    },
+    {
+      "id": "img-35",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.10_0d03e9b0.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.10_0d03e9b0.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.10_0d03e9b0.jpg"
+    },
+    {
+      "id": "img-36",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.10_2d52b9b5.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.10_2d52b9b5.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.10_2d52b9b5.jpg"
+    },
+    {
+      "id": "img-37",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.10_98d5f881.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.10_98d5f881.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.10_98d5f881.jpg"
+    },
+    {
+      "id": "img-38",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.10_d56b1ac5.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.10_d56b1ac5.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.10_d56b1ac5.jpg"
+    },
+    {
+      "id": "img-39",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.12_b16a5643.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.12_b16a5643.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.12_b16a5643.jpg"
+    },
+    {
+      "id": "img-40",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.12_d42dece2.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.12_d42dece2.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.12_d42dece2.jpg"
+    },
+    {
+      "id": "img-41",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.14_81b03c8c.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.14_81b03c8c.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.14_81b03c8c.jpg"
+    },
+    {
+      "id": "img-42",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.16_45bd6f7e.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.16_45bd6f7e.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.16_45bd6f7e.jpg"
+    },
+    {
+      "id": "img-43",
+      "filename": "WhatsApp Image 2025-08-12 at 11.07.17_797e7d03.jpg",
+      "src": "/images/WhatsApp Image 2025-08-12 at 11.07.17_797e7d03.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-12 at 11.07.17_797e7d03.jpg"
+    },
+    {
+      "id": "img-44",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.11_279f8b8b.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.11_279f8b8b.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.11_279f8b8b.jpg"
+    },
+    {
+      "id": "img-45",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.12_ddefbe41.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.12_ddefbe41.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.12_ddefbe41.jpg"
+    },
+    {
+      "id": "img-46",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.13_0a80d1b4.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.13_0a80d1b4.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.13_0a80d1b4.jpg"
+    },
+    {
+      "id": "img-47",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.14_1c1e156a.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.14_1c1e156a.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.14_1c1e156a.jpg"
+    },
+    {
+      "id": "img-48",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.15_892cdd83.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.15_892cdd83.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.15_892cdd83.jpg"
+    },
+    {
+      "id": "img-49",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.16_128cc68c.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.16_128cc68c.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.16_128cc68c.jpg"
+    },
+    {
+      "id": "img-50",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.16_88e57f21.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.16_88e57f21.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.16_88e57f21.jpg"
+    },
+    {
+      "id": "img-51",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.17_d0d0c6e7.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.17_d0d0c6e7.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.17_d0d0c6e7.jpg"
+    },
+    {
+      "id": "img-52",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.17_fa47800a.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.17_fa47800a.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.17_fa47800a.jpg"
+    },
+    {
+      "id": "img-53",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.18_17dca89d.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.18_17dca89d.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.18_17dca89d.jpg"
+    },
+    {
+      "id": "img-54",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.18_dd1f499a.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.18_dd1f499a.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.18_dd1f499a.jpg"
+    },
+    {
+      "id": "img-55",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.19_8cb0cdfe.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.19_8cb0cdfe.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.19_8cb0cdfe.jpg"
+    },
+    {
+      "id": "img-56",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.19_f23bf885.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.19_f23bf885.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.19_f23bf885.jpg"
+    },
+    {
+      "id": "img-57",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.20_66a1e57f.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.20_66a1e57f.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.20_66a1e57f.jpg"
+    },
+    {
+      "id": "img-58",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.21_03cf67d0.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.21_03cf67d0.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.21_03cf67d0.jpg"
+    },
+    {
+      "id": "img-59",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.21_5fadc9e9.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.21_5fadc9e9.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.21_5fadc9e9.jpg"
+    },
+    {
+      "id": "img-60",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.22_448aa8d7.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.22_448aa8d7.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.22_448aa8d7.jpg"
+    },
+    {
+      "id": "img-61",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.23_312a0eea.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.23_312a0eea.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.23_312a0eea.jpg"
+    },
+    {
+      "id": "img-62",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.23_9ce1a277.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.23_9ce1a277.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.23_9ce1a277.jpg"
+    },
+    {
+      "id": "img-63",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.23_f81dbade.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.23_f81dbade.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.23_f81dbade.jpg"
+    },
+    {
+      "id": "img-64",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.24_16d7528f.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.24_16d7528f.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.24_16d7528f.jpg"
+    },
+    {
+      "id": "img-65",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.24_faa868d9.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.24_faa868d9.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.24_faa868d9.jpg"
+    },
+    {
+      "id": "img-66",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.25_1280f786.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.25_1280f786.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.25_1280f786.jpg"
+    },
+    {
+      "id": "img-67",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.25_1c40d3a1.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.25_1c40d3a1.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.25_1c40d3a1.jpg"
+    },
+    {
+      "id": "img-68",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.27_94f4abd9.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.27_94f4abd9.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.27_94f4abd9.jpg"
+    },
+    {
+      "id": "img-69",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.27_a83c80e7.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.27_a83c80e7.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.27_a83c80e7.jpg"
+    },
+    {
+      "id": "img-70",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.28_59646028.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.28_59646028.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.28_59646028.jpg"
+    },
+    {
+      "id": "img-71",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.29_38dc0fcc.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.29_38dc0fcc.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.29_38dc0fcc.jpg"
+    },
+    {
+      "id": "img-72",
+      "filename": "WhatsApp Image 2025-08-16 at 08.26.31_216305ad.jpg",
+      "src": "/images/WhatsApp Image 2025-08-16 at 08.26.31_216305ad.jpg",
+      "thumb": "/images/WhatsApp Image 2025-08-16 at 08.26.31_216305ad.jpg"
+    }
+  ]
+}
