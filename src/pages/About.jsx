@@ -8,20 +8,16 @@ const AboutPage = () => {
 
   const heroSlides = [
     {
-      image: '/images/church-interior.jpg',
+      image:  '/images/about1.jpg',
       title: 'About Our Church',
       subtitle: 'Built upon the foundation of apostolic and prophetic ministry with Jesus Christ as our chief cornerstone'
     },
     {
-      image: '/images/congregation.jpg',
+      image: '/images/about1.jpg',
       title: 'Our Foundation',
       subtitle: 'Resurrection Church of Christ of All Nations - God\'s workmanship created in Christ Jesus unto good works'
     },
-    {
-      image: '/images/worship.jpg',
-      title: 'Our Mission',
-      subtitle: 'Called to harvest lost souls and make disciples of all nations through the power of the Holy Spirit'
-    }
+    
   ];
 
   useEffect(() => {
