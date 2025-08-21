@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Users, BookOpen, Globe, ChevronDown } from 'lucide-react';
+import { Heart, Users, BookOpen, Globe, ChevronDown, ZoomIn, X, ArrowUp, Clock } from 'lucide-react';
 
 const AboutPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [modalImage, setModalImage] = useState(null);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   const heroSlides = [
     {
@@ -29,6 +31,27 @@ const AboutPage = () => {
 
     return () => clearInterval(timer);
   }, [heroSlides.length]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.pageYOffset > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const openModal = (src, name, title) => {
+    setModalImage({ src, name, title });
+  };
+
+  const closeModal = () => {
+    setModalImage(null);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Hero Section */}
@@ -168,23 +191,185 @@ const AboutPage = () => {
             </div>
           </div>
 
-          {/* Call to Action */}
-          <div className="mt-20 text-center">
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 sm:p-12 text-white">
-              <Users className="w-12 h-12 mx-auto mb-6 opacity-90" />
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-                Join Our Community of Faith
-              </h3>
-              <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-                Experience the transformative power of God's love in a welcoming community dedicated to spiritual growth and service.
-              </p>
-              <button className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-200 shadow-lg">
-                Visit Us Today
-              </button>
+          {/* Mission Section */}
+          <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50 mt-16 rounded-2xl">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="bg-white rounded-2xl p-8 shadow-lg max-w-3xl mx-auto text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-8 h-8 text-white" />
+                </div>
+                <h2 className="text-3xl font-bold text-slate-800 mb-4">Our Mission</h2>
+                <p className="text-lg text-slate-600">
+                  To liberate the world from every operation of the powers of darkness into His marvelous light. 1 Peter 2:9
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Vision Section */}
+          <section className="py-16 bg-gray-100 mt-8 rounded-2xl">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="bg-white rounded-2xl p-8 shadow-lg max-w-3xl mx-auto text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-white" />
+                </div>
+                <h2 className="text-3xl font-bold text-slate-800 mb-4">Our Vision</h2>
+                <p className="text-lg text-slate-600">
+                  Harvesting the lost souls back to God through evangelism by the power of the Holy Spirit. (Matt. 9:35-38)
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Leadership Section */}
+          <section className="py-16 mt-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <h2 className="text-3xl font-bold text-slate-800 mb-4">Our Leadership</h2>
+              </div>
+              
+              {/* All Leaders Grid */}
+              <div className="flex flex-col items-center space-y-8">
+                {/* Lead Pastor - Centered */}
+                <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+                  <div className="relative group cursor-pointer" onClick={() => openModal('/images/lead pastor.jpg', 'Apostle Jude Gigei', 'Lead Pastor')}>
+                    <img
+                      src="/images/lead pastor.jpg"
+                      alt="Apostle Jude Gigei"
+                      className="w-48 h-48 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                      <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                      Click to view
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-800 mb-2">Apostle Jude Gigei</h3>
+                  <h4 className="text-base text-blue-600 font-semibold">Lead Pastor</h4>
+                </div>
+
+                {/* Other Leaders - Horizontal on Desktop, Vertical on Mobile */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center w-full">
+                  <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+                    <div className="relative group cursor-pointer" onClick={() => openModal('/images/pastor-mrs.jpg', 'Pastor Mrs. Tandisa Gegei', 'Pastor')}>
+                      <img
+                        src="/images/pastor-mrs.jpg"
+                        alt="Pastor Mrs. Tandisa Gegei"
+                        className="w-40 h-40 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                        <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
+                      <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                        Click to view
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Pastor Mrs. Tandisa Gegei</h3>
+                    <h4 className="text-base text-blue-600 font-semibold">Pastor</h4>
+                  </div>
+
+                  <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+                    <div className="relative group cursor-pointer" onClick={() => openModal('/images/evangelist.jpg', 'Evang. Esther Gija', 'Evangelist')}>
+                      <img
+                        src="/images/evangelist.jpg"
+                        alt="Evang. Esther Gija"
+                        className="w-40 h-40 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                        <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
+                      <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                        Click to view
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Evang. Esther Gija</h3>
+                    <h4 className="text-base text-blue-600 font-semibold">Evangelist</h4>
+                  </div>
+
+                  <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+                    <div className="relative group cursor-pointer" onClick={() => openModal('/images/disciple.jpg', 'Bro. Peter Bankinkosi Kleinbooi', 'Disciple')}>
+                      <img
+                        src="/images/disciple.jpg"
+                        alt="Bro. Peter Bankinkosi Kleinbooi"
+                        className="w-40 h-40 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                        <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
+                      <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                        Click to view
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Bro. Peter Bankinkosi Kleinbooi</h3>
+                    <h4 className="text-base text-blue-600 font-semibold">Disciple</h4>
+                  </div>
+
+                  <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+                    <div className="relative group cursor-pointer" onClick={() => openModal('/images/head usher.jpg', 'Sis. Dorcas F. Sam', 'Head Usher')}>
+                      <img
+                        src="/images/head usher.jpg"
+                        alt="Sis. Dorcas F. Sam"
+                        className="w-40 h-40 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                        <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
+                      <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                        Click to view
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">Sis. Dorcas F. Sam</h3>
+                    <h4 className="text-base text-blue-600 font-semibold">Head Usher</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        
+        </div>
+      </section>
+
+      {/* Image Modal */}
+      {modalImage && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" onClick={closeModal}>
+          <div className="relative max-w-4xl max-h-full bg-white rounded-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 z-10 transition-colors"
+              aria-label="Close modal"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <div className="p-6">
+              <img
+                src={modalImage.src}
+                alt={modalImage.name}
+                className="w-full h-auto max-h-[70vh] object-contain rounded-xl"
+              />
+              <div className="text-center mt-4">
+                <h3 className="text-2xl font-bold text-slate-800 mb-1">{modalImage.name}</h3>
+                <p className="text-lg text-blue-600 font-semibold">{modalImage.title}</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      )}
+
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white p-3 rounded-full shadow-lg hover:scale-110 transition-all duration-300 z-50"
+          aria-label="Back to Top"
+        >
+          <ArrowUp className="w-6 h-6" />
+        </button>
+      )}
     </div>
   );
 };
