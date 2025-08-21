@@ -1,82 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Heart, Book, Clock, Users, Calendar, ChevronDown, ArrowUp } from 'lucide-react';
+import { Heart, Clock, Users, ArrowUp, ChevronDown, X, ZoomIn } from 'lucide-react';
 
-const Services = () => {
+const About = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
 
   const heroSlides = [
+   
     {
-      title: "Worship With Us",
-      subtitle: "Join our vibrant services to experience God’s love and community.",
-      image: "/images/service2.jpg"
+      title: "Our Mission in Faith",
+      subtitle: "Liberating the world into His marvelous light",
+      image: "/images/about1.jpg"
     },
- 
     {
-      title: "Gather in Faith",
-      subtitle: "Discover our weekly events designed to uplift and inspire.",
-      image: "/images/service2.jpg"
+      title: "Join Our Family",
+      subtitle: "Growing together through worship and service",
+      image: "/images/about1.jpg"
     }
-  ];
-
-  const services = [
-    {
-      title: "Sunday Liberation Service",
-      description: "Join us every Sunday for a powerful worship experience designed to bring freedom and breakthrough. Through uplifting music, heartfelt prayer, and inspiring sermons, we seek to connect with God and strengthen our faith community.",
-      time: "9:00 AM",
-      icon: <Heart className="w-8 h-8 text-white" />,
-      color: "from-blue-500 to-blue-600",
-      textColor: "text-blue-600",
-    },
-    {
-      title: "Holy Communion",
-      description: "Held on the first Sunday of every month during our Liberation Service, Holy Communion is a sacred time to remember Jesus' sacrifice. All are welcome to participate in this meaningful act of worship.",
-      time: "During Service",
-      icon: <Book className="w-8 h-8 text-white" />,
-      color: "from-purple-500 to-purple-600",
-      textColor: "text-purple-600",
-    },
-    {
-      title: "Wednesday Evening Service",
-      description: "Our mid-week service offers encouragement, prayer, and biblical teaching to help you recharge spiritually. This intimate gathering is perfect for deepening your faith and connecting with others.",
-      time: "5:30 PM",
-      icon: <Clock className="w-8 h-8 text-white" />,
-      color: "from-green-500 to-green-600",
-      textColor: "text-green-600",
-    },
-    {
-      title: "Mid-Week Holy Communion",
-      description: "Every Wednesday, we offer a special communion service for those seeking a moment of reflection and spiritual renewal during the week. Join us for this quiet, meaningful time of worship.",
-      time: "Wednesday",
-      icon: <Heart className="w-8 h-8 text-white" />,
-      color: "from-indigo-500 to-indigo-600",
-      textColor: "text-indigo-600",
-    },
-    {
-      title: "Counselling Session",
-      description: "Our weekly counselling sessions provide personal guidance and spiritual support. Meet with our trained pastoral team to discuss life’s challenges and find encouragement through faith.",
-      time: "Thu 11:00 AM",
-      icon: <Users className="w-8 h-8 text-white" />,
-      color: "from-teal-500 to-teal-600",
-      textColor: "text-teal-600",
-    },
-    {
-      title: '"Early Will I Seek Thee"',
-      description: "Start your Friday with morning prayer and devotion. This service focuses on seeking God’s guidance and strength for the day ahead, fostering a deeper personal connection with Him.",
-      time: "Fri 8:00 AM",
-      icon: <Book className="w-8 h-8 text-white" />,
-      color: "from-orange-500 to-orange-600",
-      textColor: "text-orange-600",
-    },
-    {
-      title: "Night Vigil",
-      description: "On the first Friday of every month, we hold an all-night prayer vigil. This powerful time of worship and intercession is open to all who seek a deeper spiritual experience.",
-      time: "Fri 10:00 PM",
-      icon: <Calendar className="w-8 h-8 text-white" />,
-      color: "from-pink-500 to-pink-600",
-      textColor: "text-pink-600",
-    },
   ];
 
   useEffect(() => {
@@ -98,10 +39,18 @@ const Services = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const openModal = (imageSrc, name, title) => {
+    setModalImage({ src: imageSrc, name, title });
+  };
+
+  const closeModal = () => {
+    setModalImage(null);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
       {/* Hero Section */}
-  <section id="about-hero" className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section id="about-hero" className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000"
           style={{
@@ -116,7 +65,6 @@ const Services = () => {
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90 animate-fade-in-up">
             {heroSlides[currentSlide].subtitle}
           </p>
-         
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
           {heroSlides.map((_, index) => (
@@ -132,34 +80,230 @@ const Services = () => {
         <ChevronDown className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-8 h-8 text-white animate-bounce" />
       </section>
 
-      {/* Weekly Services Section */}
+      {/* Mission Section */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-800 mb-4">Weekly Services</h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Our weekly services offer opportunities for worship, reflection, and spiritual growth. Join us to experience God’s love and connect with our community.
+          <div className="bg-white rounded-2xl p-8 shadow-lg max-w-3xl mx-auto text-center">
+            <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Heart className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">Our Mission</h2>
+            <p className="text-lg text-slate-600">
+              To liberate the world from every operation of the powers of darkness into His marvelous light. 1 Peter 2:9
             </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow text-center"
-              >
-                <div
-                  className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-full flex items-center justify-center mx-auto mb-4`}
-                >
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-2">{service.title}</h3>
-                <p className="text-slate-600 mb-4">{service.description}</p>
-                <p className={`text-2xl font-bold ${service.textColor}`}>{service.time}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
+
+      {/* Vision Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl p-8 shadow-lg max-w-3xl mx-auto text-center">
+            <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Clock className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">Our Vision</h2>
+            <p className="text-lg text-slate-600">
+              Harvesting the lost souls back to God through evangelism by the power of the Holy Spirit. (Matt. 9:35-38)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* About RCCAN Section */}
+      <section className="py-16 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-slate-800 mb-4">About RCCAN</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            </div>
+            <div className="prose prose-lg max-w-none text-slate-600 space-y-6">
+              <p>
+                <strong>Resurrection Church of Christ of All Nations (RCCAN)</strong> under Apostle Jude Gigei and Pastor Mrs. Tandisa Gigei as the founders (G.O) is built upon the Foundation of the Apostolic and prophetic ministry with Jesus Christ himself being the chief corner stone as it is written in <em>Ephesians 2:20</em>.
+              </p>
+              <p>
+                The church Resurrection Church of Christ of All Nations is God's workmanship, created in Christ Jesus unto good works, which God himself hath before ordained that we should walk in them. As it is written in <em>Ephesians 2:10</em>, we are the loving people of God sent to harvest the lost souls back to the kingdom of God through evangelism by the power of the Holy Spirit as our vision <em>(Matthew 9:35-38)</em>.
+              </p>
+              <p>
+                Resurrection Church of Christ of All Nations is also ordained to go out and make disciples of men <em>(Matthew 28:18-20)</em> as <strong>A GREAT COMMISSION</strong>. And to totally liberate the World from every oppression of the power of darkness into God's marvelous light. As it is written in <em>1 Peter 2:9</em>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Apostle's Creed Section */}
+      <section className="py-16 bg-slate-800 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-4">RCCAN Apostle's Creed</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-yellow-400 mx-auto"></div>
+          </div>
+          <div className="bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl p-8 shadow-2xl">
+            <div className="text-center space-y-4 text-lg leading-relaxed">
+              <p>I believe in God,</p>
+              <p>the Father almighty,</p>
+              <p>Creator of heaven and earth,</p>
+              <p>and in Jesus Christ, his only Son, our Lord,</p>
+              <p>who was conceived by the Holy Spirit,</p>
+              <p>born of the Virgin Mary,</p>
+              <p>suffered under Pontius Pilate,</p>
+              <p>was crucified, died and was buried;</p>
+              <p>he descended into hell;</p>
+              <p>on the third day he rose again from the dead;</p>
+              <p>he ascended into heaven,</p>
+              <p>and is seated at the right hand of God the Father almighty;</p>
+              <p>from there he will come to judge the living and the dead.</p>
+              <p className="mt-6">I believe in the Holy Spirit,</p>
+              <p>the holy pentecostal Church,</p>
+              <p>the communion of saints,</p>
+              <p>the forgiveness of sins,</p>
+              <p>the resurrection of the body,</p>
+              <p>and life everlasting.</p>
+              <div className="mt-8 text-amber-400 font-bold text-xl">
+                <p>Shalom, Shalom, Shalom</p>
+                <p>Amen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Section */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Users className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">Our Leadership</h2>
+          </div>
+          
+          {/* All Leaders Grid */}
+          <div className="flex flex-col items-center space-y-8">
+            {/* Lead Pastor - Centered */}
+            <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+              <div className="relative group cursor-pointer" onClick={() => openModal('/images/lead pastor.jpg', 'Apostle Jude Gigei', 'Lead Pastor')}>
+                <img
+                  src="/images/lead pastor.jpg"
+                  alt="Apostle Jude Gigei"
+                  className="w-48 h-48 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                  <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                  Click to view
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Apostle Jude Gigei</h3>
+              <h4 className="text-base text-blue-600 font-semibold">Lead Pastor</h4>
+            </div>
+
+            {/* Other Leaders - Horizontal on Desktop, Vertical on Mobile */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center w-full">
+              <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+                <div className="relative group cursor-pointer" onClick={() => openModal('/images/pastor-mrs.jpg')}>
+                  <img
+                    src="/images/pastor-mrs.jpg"
+                    alt=""
+                    className="w-40 h-40 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                    <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                  <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                    Click to view
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-2">Pastor Mrs. Tandisa Gegei</h3>
+                <h4 className="text-base text-blue-600 font-semibold">Pastor</h4>
+              </div>
+
+              <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+                <div className="relative group cursor-pointer" onClick={() => openModal('/images/evangelist.jpg')}>
+                  <img
+                    src="/images/evangelist.jpg"
+                    alt=""
+                    className="w-40 h-40 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                    <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                  <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                    Click to view
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-2">Evang. Esther Gija</h3>
+                <h4 className="text-base text-blue-600 font-semibold">Evangelist</h4>
+              </div>
+
+              <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+                <div className="relative group cursor-pointer" onClick={() => openModal('/images/disciple.jpg')}>
+                  <img
+                    src="/images/disciple.jpg"
+                    alt=""
+                    className="w-40 h-40 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                    <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                  <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                    Click to view
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-2"> Bro. Peter Bankinkosi Kleinbooi</h3>
+                <h4 className="text-base text-blue-600 font-semibold">Disciple</h4>
+              </div>
+
+              <div className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs">
+                <div className="relative group cursor-pointer" onClick={() => openModal('/images/head usher.jpg')}>
+                  <img
+                    src="/images/head usher.jpg"
+                    alt=""
+                    className="w-40 h-40 mx-auto mb-4 rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                    <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                  <div className="absolute bottom-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full opacity-70 group-hover:opacity-100 transition-opacity">
+                    Click to view
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-2">Sis. Dorcas F. Sam</h3>
+                <h4 className="text-base text-blue-600 font-semibold">Head Usher</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Modal */}
+      {modalImage && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" onClick={closeModal}>
+          <div className="relative max-w-4xl max-h-full bg-white rounded-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 z-10 transition-colors"
+              aria-label="Close modal"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <div className="p-6">
+              <img
+                src={modalImage.src}
+                alt={modalImage.name}
+                className="w-full h-auto max-h-[70vh] object-contain rounded-xl"
+              />
+              <div className="text-center mt-4">
+                <h3 className="text-2xl font-bold text-slate-800 mb-1">{modalImage.name}</h3>
+                <p className="text-lg text-blue-600 font-semibold">{modalImage.title}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Back to Top Button */}
       {showBackToTop && (
@@ -175,4 +319,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default About;
