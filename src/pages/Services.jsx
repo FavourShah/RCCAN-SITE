@@ -101,7 +101,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
       {/* Hero Section */}
-      <section id="services-hero" className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+  <section id="about-hero" className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 transform scale-105"
           style={{
